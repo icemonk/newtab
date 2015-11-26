@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lrm;</title>
+    <link rel="shortcut icon" href="favicon(2).ico">
+<!--    <link rel="stylesheet" href="">-->
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!--<script type="application/javascript" src="http://www.telize.com/geoip?callback=getgeoip"></script>-->
+<style>
+    
+    .fix{
+          -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .bgi1{
+         background: url("https://source.unsplash.com/category/nature/1600x900") no-repeat center center fixed;
+        -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }
+/*
+    .bgi1{
+         background: url("http://localhost/z6.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }
+    .bgi2{
+*/
+        background: url("http://localhost/u11.jpg") no-repeat center center fixed;
+          -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }
+    .bgi3{
+        background: url("http://localhost/u8.jpeg") no-repeat center center fixed;
+          -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }    
+    .bgi4{
+        background: url("http://localhost/u9.jpeg") no-repeat center center fixed;
+          -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }
+    .bgi5{
+        background: url("http://localhost/u10.jpeg") no-repeat center center fixed;
+          -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }
+    
+    @keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+    @keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+    animation: fadeInOut 1s;
+}
+    
+.fadeInUp {
+  animation-name: fadeInUp;
+    animation: fadeInUp 1s;
+/*    opacity: 0;*/
+/*    transition: all 1s;*/
+    
+}
+    #link-grind{
+        position: fixed;
+        top: 90%;
+        left: 40%;
+        transform: translateX(-50%) translateY(-50%);
+        color: #a2a2a2;
+/*        background-color: #000;*/
+    }
+    
+    .ic{
+        margin: 0.5em;
+        color: #a2a2a2;
+        transition: 0.3s all;
+    }
+    
+    .ic:visited{
+        color: #a2a2a2;
+    }
+    .ic:hover{
+        
+/*    transition: 0.5s all;*/
+    }
+    
+    @keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+    animation: fadeInRight 1s;
+}
+    
+    
+    body { 
+
+/* background: url("http://testar.cf/u/") no-repeat center center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+    
+    #txt{
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+/*        background-color: #5d5d5d;*/
+        font-size: 800%;
+        font-weight: 100;
+        text-align: center;
+        vertical-align: middle;
+        position: absolute;
+        color: #ffffff;
+        top: 40%;
+        left: 68%;
+/*        transform: translateX(-50%) translateY(-50%);*/
+        
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+    
+    #internet{
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+/*        background-color: #5d5d5d;*/
+        font-size: 200%;
+        letter-spacing: 1px;
+        color: #fff;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-weight: 200;
+        position: absolute; 
+        color: #ffffff;
+        top: 90%;
+        left: 87%;
+/*        transform: translateX(-50%) translateY(-50%);*/
+          animation-name: fadeInUp;
+    animation: fadeInUp 1s;
+/*        animation-delay: 2s;*/
+        
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+    
+    .b{
+          filter: blur(5px);
+  -webkit-filter: blur(5px);
+    }
+    
+    .icon{
+        font-family: Futura, 'Trebuchet MS', sans-serif;
+        font-size: 350%;
+        color: #a2a2a2;
+        
+    }
+    .icon:visted{
+        color: #a2a2a2;
+    }
+        a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+    .disable {
+/*        display: none;*/
+        opacity: 0;
+        transition: 0.4s all;
+/*          animation-name: fadeOut;*/
+/*          -webkit-animation-name: fadeOut;*/
+/*          -webkit-animation: fadeInOut 1s;*/
+/*          animation: fadeInOut 1s;*/
+    }
+            
+    #cmd {
+        position: absolute;
+/*        z-index: 99;*/
+    }
+    
+    .spinner {
+width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+position: fixed;
+                top: 10%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 99;
+  margin: 100px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}    
+            @-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+        
+.sk-cube-grid {
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+}
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #333;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); 
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  } 
+}    
+
+    .move{
+        transition: all 1s;
+        transform: translateX(4em);
+    }        
+    .move:before{
+        transition: all 1s;
+        transform: translateX(4em);
+    }    
+    .move:after{
+        transition: all 1s;
+        transform: translateX(0);
+    }
+    .homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+</style>
+<script>
+    
+//document.getElementById("body").style.backgroundImage = "url('https://source.unsplash.com/category/nature/1600x900')";
+    $('body').css('background-image', "url('https://source.unsplash.com/category/nature/1600x900')");
+//    document.body.style.backgroundImage ="url('https://source.unsplash.com/category/nature/1600x900')";
+//    alert('');
+        //jQuery is required to run this code
+$( document ).ready(function() {
+
+    scaleVideoContainer();
+
+    initBannerVideoSize('.video-container .poster img');
+    initBannerVideoSize('.video-container .filter');
+    initBannerVideoSize('.video-container video');
+
+    $(window).on('resize', function() {
+        scaleVideoContainer();
+        scaleBannerVideoSize('.video-container .poster img');
+        scaleBannerVideoSize('.video-container .filter');
+        scaleBannerVideoSize('.video-container video');
+    });
+
+});
+
+function scaleVideoContainer() {
+
+    var height = $(window).height() + 5;
+    var unitHeight = parseInt(height) + 'px';
+    $('.homepage-hero-module').css('height',unitHeight);
+
+}
+
+function initBannerVideoSize(element){
+
+    $(element).each(function(){
+        $(this).data('height', $(this).height());
+        $(this).data('width', $(this).width());
+    });
+
+    scaleBannerVideoSize(element);
+
+}
+
+function scaleBannerVideoSize(element){
+
+    var windowWidth = $(window).width(),
+    windowHeight = $(window).height() + 5,
+    videoWidth,
+    videoHeight;
+
+    console.log(windowHeight);
+
+    $(element).each(function(){
+        var videoAspectRatio = $(this).data('height')/$(this).data('width');
+
+        $(this).width(windowWidth);
+
+        if(windowWidth < 1000){
+            videoHeight = windowHeight;
+            videoWidth = videoHeight / videoAspectRatio;
+            $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
+
+            $(this).width(videoWidth).height(videoHeight);
+        }
+
+        $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
+
+    });
+}
+
+//  var xhttp = new XMLHttpRequest();
+//  xhttp.onreadystatechange = function() {
+//    if (xhttp.readyState == 4 && xhttp.status == 200) {
+//      alert(xhttp.responseText);
+//    }
+//  }
+//  alert("Hmmm");
+//  xhttp.open("GET", "http://www.telize.com/geoip", true);
+//  xhttp.send();
+//
+//    
+/*!
+ * JavaScript Cookie v2.0.4
+ * https://github.com/js-cookie/js-cookie
+ *
+ * Copyright 2006, 2015 Klaus Hartl & Fagner Brack
+ * Released under the MIT license
+ */
+(function(factory){if(typeof define==='function'&&define.amd){define(factory);}else if(typeof exports === 'object'){module.exports=factory();}else{var _OldCookies=window.Cookies;var api=window.Cookies=factory();api.noConflict=function(){window.Cookies=_OldCookies;return api;};}}(function(){function extend(){var i=0;var result={};for(;i<arguments.length;i++){var attributes=arguments[i];for(var key in attributes){result[key]=attributes[key];}}return result;}function init(converter){function api(key,value,attributes){var result;if (arguments.length>1){attributes=extend({path:'/'},api.defaults,attributes);if(typeof attributes.expires==='number'){var expires=new Date();expires.setMilliseconds(expires.getMilliseconds()+attributes.expires*864e+5);attributes.expires=expires;}
+try{result=JSON.stringify(value);if (/^[\{\[]/.test(result)){value=result;}}catch(e){}value=encodeURIComponent(String(value));value=value.replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g,decodeURIComponent);key=encodeURIComponent(String(key));key=key.replace(/%(23|24|26|2B|5E|60|7C)/g,decodeURIComponent);key=key.replace(/[\(\)]/g,escape);return(document.cookie=[key,'=',value,attributes.expires&&'; expires='+attributes.expires.toUTCString(),attributes.path&&'; path='+attributes.path,attributes.domain &&'; domain='+attributes.domain,attributes.secure?'; secure':''].join(''));}if(!key){result={};}var cookies=document.cookie?document.cookie.split('; '):[];var rdecode=/(%[0-9A-Z]{2})+/g;var i=0;
+for(;i<cookies.length;i++){var parts=cookies[i].split('=');var name=parts[0].replace(rdecode,decodeURIComponent);var cookie=parts.slice(1).join('=');if(cookie.charAt(0)==='"'){cookie=cookie.slice(1,-1);}try{cookie=converter&&converter(cookie,name)||cookie.replace(rdecode,decodeURIComponent);if(this.json){try{cookie=JSON.parse(cookie);}catch(e){}}if(key===name){result=cookie;break;}if(!key){result[name]=cookie;}}catch(e){}}return result;}api.get=api.set=api;api.getJSON=function(){return api.apply({json: true},[].slice.call(arguments));};api.defaults={};api.remove=function(key,attributes){api(key,'',extend(attributes,{expires:-1}));};api.withConverter=init;return api;}return init();}));
+        
+        /* mousetrap v1.5.3 craig.is/killing/mice */
+(function(C,r,g){function t(a,b,h){a.addEventListener?a.addEventListener(b,h,!1):a.attachEvent("on"+b,h)}function x(a){if("keypress"==a.type){var b=String.fromCharCode(a.which);a.shiftKey||(b=b.toLowerCase());return b}return l[a.which]?l[a.which]:p[a.which]?p[a.which]:String.fromCharCode(a.which).toLowerCase()}function D(a){var b=[];a.shiftKey&&b.push("shift");a.altKey&&b.push("alt");a.ctrlKey&&b.push("ctrl");a.metaKey&&b.push("meta");return b}function u(a){return"shift"==a||"ctrl"==a||"alt"==a||"meta"==a}function y(a,b){var h,c,e,g=[];h=a;"+"===h?h=["+"]:(h=h.replace(/\+{2}/g,"+plus"),h=h.split("+"));for(e=0;e<h.length;++e)c=h[e],z[c]&&(c=z[c]),b&&"keypress"!=b&&A[c]&&(c=A[c],g.push("shift")),u(c)&&g.push(c);h=c;e=b;if(!e){if(!k){k={};for(var m in l)95<m&&112>m||l.hasOwnProperty(m)&&(k[l[m]]=m)}e=k[h]?"keydown":"keypress"}"keypress"==e&&g.length&&(e="keydown");return{key:c,modifiers:g,action:e}}function B(a,b){return null===a||a===r?!1:a===b?!0:B(a.parentNode,b)}function c(a){function b(a){a=
+a||{};var b=!1,n;for(n in q)a[n]?b=!0:q[n]=0;b||(v=!1)}function h(a,b,n,f,c,h){var g,e,l=[],m=n.type;if(!d._callbacks[a])return[];"keyup"==m&&u(a)&&(b=[a]);for(g=0;g<d._callbacks[a].length;++g)if(e=d._callbacks[a][g],(f||!e.seq||q[e.seq]==e.level)&&m==e.action){var k;(k="keypress"==m&&!n.metaKey&&!n.ctrlKey)||(k=e.modifiers,k=b.sort().join(",")===k.sort().join(","));k&&(k=f&&e.seq==f&&e.level==h,(!f&&e.combo==c||k)&&d._callbacks[a].splice(g,1),l.push(e))}return l}function g(a,b,n,f){d.stopCallback(b,
+b.target||b.srcElement,n,f)||!1!==a(b,n)||(b.preventDefault?b.preventDefault():b.returnValue=!1,b.stopPropagation?b.stopPropagation():b.cancelBubble=!0)}function e(a){"number"!==typeof a.which&&(a.which=a.keyCode);var b=x(a);b&&("keyup"==a.type&&w===b?w=!1:d.handleKey(b,D(a),a))}function l(a,c,n,f){function e(c){return function(){v=c;++q[a];clearTimeout(k);k=setTimeout(b,1E3)}}function h(c){g(n,c,a);"keyup"!==f&&(w=x(c));setTimeout(b,10)}for(var d=q[a]=0;d<c.length;++d){var p=d+1===c.length?h:e(f||
+y(c[d+1]).action);m(c[d],p,f,a,d)}}function m(a,b,c,f,e){d._directMap[a+":"+c]=b;a=a.replace(/\s+/g," ");var g=a.split(" ");1<g.length?l(a,g,b,c):(c=y(a,c),d._callbacks[c.key]=d._callbacks[c.key]||[],h(c.key,c.modifiers,{type:c.action},f,a,e),d._callbacks[c.key][f?"unshift":"push"]({callback:b,modifiers:c.modifiers,action:c.action,seq:f,level:e,combo:a}))}var d=this;a=a||r;if(!(d instanceof c))return new c(a);d.target=a;d._callbacks={};d._directMap={};var q={},k,w=!1,p=!1,v=!1;d._handleKey=function(a,
+c,e){var f=h(a,c,e),d;c={};var k=0,l=!1;for(d=0;d<f.length;++d)f[d].seq&&(k=Math.max(k,f[d].level));for(d=0;d<f.length;++d)f[d].seq?f[d].level==k&&(l=!0,c[f[d].seq]=1,g(f[d].callback,e,f[d].combo,f[d].seq)):l||g(f[d].callback,e,f[d].combo);f="keypress"==e.type&&p;e.type!=v||u(a)||f||b(c);p=l&&"keydown"==e.type};d._bindMultiple=function(a,b,c){for(var d=0;d<a.length;++d)m(a[d],b,c)};t(a,"keypress",e);t(a,"keydown",e);t(a,"keyup",e)}var l={8:"backspace",9:"tab",13:"enter",16:"shift",17:"ctrl",18:"alt",
+20:"capslock",27:"esc",32:"space",33:"pageup",34:"pagedown",35:"end",36:"home",37:"left",38:"up",39:"right",40:"down",45:"ins",46:"del",91:"meta",93:"meta",224:"meta"},p={106:"*",107:"+",109:"-",110:".",111:"/",186:";",187:"=",188:",",189:"-",190:".",191:"/",192:"`",219:"[",220:"\\",221:"]",222:"'"},A={"~":"`","!":"1","@":"2","#":"3",$:"4","%":"5","^":"6","&":"7","*":"8","(":"9",")":"0",_:"-","+":"=",":":";",'"':"'","<":",",">":".","?":"/","|":"\\"},z={option:"alt",command:"meta","return":"enter",
+escape:"esc",plus:"+",mod:/Mac|iPod|iPhone|iPad/.test(navigator.platform)?"meta":"ctrl"},k;for(g=1;20>g;++g)l[111+g]="f"+g;for(g=0;9>=g;++g)l[g+96]=g;c.prototype.bind=function(a,b,c){a=a instanceof Array?a:[a];this._bindMultiple.call(this,a,b,c);return this};c.prototype.unbind=function(a,b){return this.bind.call(this,a,function(){},b)};c.prototype.trigger=function(a,b){if(this._directMap[a+":"+b])this._directMap[a+":"+b]({},a);return this};c.prototype.reset=function(){this._callbacks={};this._directMap=
+{};return this};c.prototype.stopCallback=function(a,b){return-1<(" "+b.className+" ").indexOf(" mousetrap ")||B(b,this.target)?!1:"INPUT"==b.tagName||"SELECT"==b.tagName||"TEXTAREA"==b.tagName||b.isContentEditable};c.prototype.handleKey=function(){return this._handleKey.apply(this,arguments)};c.init=function(){var a=c(r),b;for(b in a)"_"!==b.charAt(0)&&(c[b]=function(b){return function(){return a[b].apply(a,arguments)}}(b))};c.init();C.Mousetrap=c;"undefined"!==typeof module&&module.exports&&(module.exports=
+c);"function"===typeof define&&define.amd&&define(function(){return c})})(window,document);
+(function(d){function n(b,a,h){if(this.recording)if("keydown"==h.type){1===b.length&&g&&k();for(i=0;i<a.length;++i)l(a[i]);l(b)}else"keyup"==h.type&&0<c.length&&k();else p.apply(this,arguments)}function l(b){var a;for(a=0;a<c.length;++a)if(c[a]===b)return;c.push(b);1===b.length&&(g=!0)}function k(){e.push(c);c=[];g=!1;clearTimeout(m);m=setTimeout(q,1E3)}function r(b){var a;for(a=0;a<b.length;++a)b[a].sort(function(a,b){return 1<a.length&&1===b.length?-1:1===a.length&&1<b.length?1:a>b?1:-1}),b[a]=
+b[a].join("+")}function q(){f&&(r(e),f(e));e=[];f=null;c=[]}var e=[],f=null,c=[],g=!1,m=null,p=d.prototype.handleKey;d.prototype.record=function(b){var a=this;a.recording=!0;f=function(){a.recording=!1;b.apply(a,arguments)}};d.prototype.handleKey=function(){n.apply(this,arguments)};d.init()})(Mousetrap);
+
+        
+        
+function u(url){
+        var spinner = document.querySelector("#sk-cube-grid");
+        spinner.classList.remove("disable");
+        window.location.replace(url);
+//        window.open(url,'_target')
+}        
+function u2(url){
+        var spinner = document.querySelector("#spinner");
+        spinner.classList.remove("disable");
+        window.location.replace(url);
+}        
+        
+    function recordSequence() {
+//      alert("Record")
+        Mousetrap.record(function(sequence) {
+        console.log(sequence.join(' '));
+        // sequence is an array like ['ctrl+k', 'c']
+//      alert('You pressed: ' + sequence.join(' '));
+        });
+    }
+function bg1(){
+        var body = document.querySelector("#body");
+        body.classList.remove("bgi2");
+        body.classList.remove("bgi3");
+        body.classList.remove("bgi4");
+        body.classList.remove("bgi5");
+        body.classList.add("bgi1");
+}
+function bg2(){
+        var body = document.querySelector("#body");
+        body.classList.remove("bgi1");
+        body.classList.remove("bgi3");
+        body.classList.remove("bgi4");
+        body.classList.remove("bgi5");
+        body.classList.add("bgi2");
+}
+function bg3(){
+        var body = document.querySelector("#body");
+//        body.classList.toggle("bgi3");
+        body.classList.remove("bgi1"); 
+        body.classList.remove("bgi2");
+        body.classList.remove("bgi4");
+        body.classList.remove("bgi5");
+        body.classList.add("bgi3");
+        
+}
+function bg4(){
+        var body = document.querySelector("#body");
+        body.classList.remove("bgi1"); 
+        body.classList.remove("bgi2");
+        body.classList.remove("bgi3");
+        body.classList.remove("bgi5");
+        body.classList.add("bgi4");
+//        alert("bg4");
+}
+function bg5(){
+        var body = document.querySelector("#body");
+        body.classList.remove("bgi1"); 
+        body.classList.remove("bgi2");
+        body.classList.remove("bgi3");
+        body.classList.remove("bgi4");
+        body.classList.add("bgi5");
+//        alert("bg4");
+}
+function bg6(){
+        var body = document.querySelector("#all");
+//        body.classList.remove("bgi1"); 
+//        body.classList.remove("bgi2");
+//        body.classList.add("bgi3");
+        body.classList.add("fadeOut");
+        
+}
+    function bg7(){
+        var body = document.querySelector("#body");
+        body.classList.remove("bgi1"); 
+        body.classList.remove("bgi2");
+        body.classList.remove("bgi3");
+        body.classList.remove("bgi4");
+        body.classList.remove("bgi5");
+    }
+function hidden(){
+    var all = document.querySelector("#all");
+//    all.classList.toggle("fadeInOut");
+    all.classList.toggle("disable");
+//   alert("fade?");
+    
+}   
+function move(){
+    var txt = document.querySelector("#txt");
+    txt.classList.toggle("move")
+}
+    
+Mousetrap.bind('2', function() { bg2() });
+Mousetrap.bind('1', function() { bg1() });
+Mousetrap.bind('3', function() { bg3() });
+Mousetrap.bind('4', function() { bg4() });
+Mousetrap.bind('5', function() { bg5() });
+Mousetrap.bind('7', function() { bg7() });
+Mousetrap.bind('up down', function() { hidden() });
+Mousetrap.bind('left', function() { move() });
+        
+//Mousetrap.bind('g', function() { u("http://google.com") });
+
+        
+//JSON!
+    
+//    var url = [
+//        { "link" : "http://google.com", "key" : "g" },
+//        { "link" : "http://facebook.com", "key" : "f" }
+//    ];
+
+var url = 
+    {
+        "g" : "http://google.com",
+        "f" : "http://facebook.com"
+//        "a" : "http://www.aftonbladet.se",
+//        "shift+r" : "http://reddit.com",
+//        "u" : "http://unsplash.com"
+//        "r+x" : "http://regexr.com",
+//        "c" : "http://tympanus.net/codrops",
+//        "o" : "http://outlook.com",
+//        "g" : "http://google.com"
+//        "y" : "http://youtube.com",
+//        "x" : "http://xe.com"
+//        "g" : "http://banggood.com",
+//        "g" : "http://prisjakt.se"
+    };
+    
+    function getgeoip(json){
+    	console.log("Geolocation information for IP address : ", json.ip);
+    	console.log("Country : ", json.country);
+    	console.log("Latitude : ", json.latitude);
+    	console.log("Longitude : ", json.longitude);
+    }    
+    
+    
+Cookies.set('url', url); 
+console.log(Cookies.get());    
+
+//alert(url[0].link);    
+//Mousetrap.bind(url[0].key, function() { u(url[0].link) });
+
+// var p =
+//    {
+//        "p1": "value1",
+//        "p2": "value2",
+//        "p3": "value3"
+//    };
+    
+for (var key in url) {
+  if (url.hasOwnProperty(key)) {
+    console.log(key + " -> " + url[key]);
+    Mousetrap.bind(key, function() { u(url[key]) });
+  }
+}    
+    
+function startTime() {
+//    recordSequence()
+//    loadDoc()
+    internet();
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    h = checkTime(h);
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+        
+tempImg1 = new Image()
+tempImg1.src="http://localhost/z6.jpg"
+tempImg2 = new Image()
+tempImg2.src="http://localhost/u8.jpeg"
+tempImg3 = new Image()
+tempImg3.src="http://localhost/u9.jpeg"
+tempImg4 = new Image()
+tempImg4.src="http://localhost/u10.jpeg"
+tempImg5 = new Image()
+tempImg5.src="http://localhost/u11.jpg"
+        
+function internet() {
+    document.getElementById('internet').innerHTML = "internet:  "+navigator.onLine;
+    var t = setTimeout(internet, 1000);
+}    
+</script>
+<!--
+    <script src="https://raw.githubusercontent.com/marcuswestin/store.js/master/store.min.js"></script>
+<script>
+    init()
+    function init() {
+        if (!store.enabled) {
+            alert('Local storage is not supported by your browser. Please disable "Private Mode", or upgrade to a modern browser.')
+            return
+        } else {
+            alert('It works')
+        }
+        var user = store.get('user')
+        store.set('username', 'marcus')
+        console.log(store.get('username'))
+        // ... and so on ...
+    }
+</script>
+-->
+</head>
+
+<body onload="startTime()" id="body" class="bgi1">
+<div id="all">
+    <div class="box">
+<button onclick="recordSequence()">Record</button>
+    <div id="txt" class="fadeInRight"></div>
+    </div>
+    <div id="internet"></div>
+    <div class="link-grid" id="link-grind">
+    <a href="https://google.com"><i class="fa fa-google fa-3x fadeInUp ic" ></i></a>
+        <a href="https://facebook.com"><i class="fa fa-facebook-f fa-3x fadeInUp ic" ></i></a>
+        <a href="https://reddit.com"><i class="fa fa-reddit fa-3x fadeInUp ic" ></i></a>
+        <a href="https://outlook.com"><i class="icon fadeInUp ic" >O</i></a>
+        <a href="https://youtube.com"><i class="fa fa-youtube-play fa-3x fadeInUp ic" ></i></a>
+        <a href="https://unsplash.com"><i class="fa fa-camera-retro fa-3x fadeInUp ic" ></i></a>
+<!--        <a href="https://unsplash.com"><i class="fa fa-cog fa-spin fa-3x fadeInUp ic" ></i></a>-->
+        
+    </div>
+    
+<!--
+    <div class="homepage-hero-module">
+    <div class="video-container">
+        <div class="filter"></div>
+        <video autoplay loop class="fillWidth">
+            <source src="blurry-night.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="blurry-night.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+        <div class="poster">
+            <img src="blurry-night.jpg" alt="">
+        </div>
+    </div>
+</div>
+-->
+    
+    <div class="sk-cube-grid disable" id="sk-cube-grid">
+  <div class="sk-cube sk-cube1"></div>
+  <div class="sk-cube sk-cube2"></div>
+  <div class="sk-cube sk-cube3"></div>
+  <div class="sk-cube sk-cube4"></div>
+  <div class="sk-cube sk-cube5"></div>
+  <div class="sk-cube sk-cube6"></div>
+  <div class="sk-cube sk-cube7"></div>
+  <div class="sk-cube sk-cube8"></div>
+  <div class="sk-cube sk-cube9"></div>
+</div>
+    <div class="spinner disable" id="spinner"></div>
+    <div id="cmd"></div>
+    <i class="wi wi-night-sleet"></i>
+    </div>
+    
+</body>         
+</html>
+                
